@@ -9,7 +9,7 @@
     update_cache: yes
   register: apt_status
   until: apt_status is success
-  delay: 30
+  delay: 60
   retries: 10
 
 - name: Update vimrc
